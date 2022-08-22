@@ -1,9 +1,21 @@
+
+let Plus = document.querySelectorAll(".fa-plus")
+
 let count = 0;
-document.getElementById("add").onclick=function(){
-    count++;
-    document.getElementById("counterLabel").innerHTML=count;
-}
-document.getElementById("minus").onclick=function(){
+Plus.forEach(btn => {
+    count ++
+    let counter = btn.parentElement.previousElementSibling
+    btn.addEventListener("click", add = () => {
+        counter.innerHTML = parseInt(counter.innerHTML) + 1
+    })
+})
+
+// document.querySelectorAll(".fa-plus").onclick=function(e){
+//     count++;
+//     console.log("adding")
+//     document.getElementById("counterLabel").innerHTML=count;
+// }
+document.querySelectorAll("#minus1,#minus2").onclick=function(){
     if(count>0){
         count--;
     }
