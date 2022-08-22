@@ -1,29 +1,26 @@
 
 let Plus = document.querySelectorAll(".fa-plus")
+let minus = document.querySelectorAll(".fa-minus")
+let priceTag = document.querySelectorAll(".priceTag")
 
-let count = 0;
-Plus.forEach(btn => {
-    count ++
-    let counter = btn.parentElement.previousElementSibling
+// increasing elements counter
+Plus.forEach((btn, idx) => {
+    let plusCounter = priceTag[idx]
     btn.addEventListener("click", add = () => {
-        counter.innerHTML = parseInt(counter.innerHTML) + 1
+        // console.log(idx)
+        plusCounter.innerHTML = parseInt(plusCounter.innerHTML) + 1
+    })
+})
+// decreasing elements counter
+minus.forEach((btn,idx)=>{
+    let minusCounter=priceTag[idx]
+    btn.addEventListener("click",add=()=>{
+        if(parseInt(minusCounter.innerHTML)>0){
+            minusCounter.innerHTML=parseInt(minusCounter.innerHTML)-1;
+        }
     })
 })
 
-// document.querySelectorAll(".fa-plus").onclick=function(e){
-//     count++;
-//     console.log("adding")
-//     document.getElementById("counterLabel").innerHTML=count;
-// }
-document.querySelectorAll("#minus1,#minus2").onclick=function(){
-    if(count>0){
-        count--;
-    }
-    else{
-        count=0;
-    }
-    document.getElementById("counterLabel").innerHTML=count;
-}
 let loveBtn = document.getElementById("love")
 let loveCount=1
 document.getElementById("love").onclick=function(){
