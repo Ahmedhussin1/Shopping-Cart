@@ -16,10 +16,13 @@ Plus.forEach((btn, idx) => {
 })
 // decreasing elements counter
 minus.forEach((btn,idx)=>{
-    let minusCounter=priceTag[idx]
+    let minusCounter=priceTag[idx];
+    let itmCounter=prices[idx];
     btn.addEventListener("click",add=()=>{
         if(parseInt(minusCounter.innerHTML)>0){
             minusCounter.innerHTML=parseInt(minusCounter.innerHTML)-1;
+            totalPrice.innerHTML = parseInt(totalPrice.innerHTML)-parseInt(itmCounter.innerHTML);
+
         }
     })
 })

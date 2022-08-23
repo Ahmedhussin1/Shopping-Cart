@@ -237,6 +237,7 @@ header i{
     color: #121212;
     font-size: 1.3rem;
     font-weight: bold;
+    margin-right: 10px;
 }
 .price-div label{
     color: #121212;
