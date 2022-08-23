@@ -178,6 +178,19 @@ header i{
     color: #404553;
     font-weight:300;
 }
+.fa-plus{
+    border:thin solid #404553;
+    border-radius: 2px;
+    padding: 1px;
+}
+.fa-minus{
+    border:thin solid #404553;
+    border-radius: 2px;
+    padding: 1px;
+}
+.fa-solid:hover{
+    cursor: pointer;
+}
 .add-remove{
     text-align: center;
     grid-column-start: 3;
