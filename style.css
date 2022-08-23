@@ -14,7 +14,7 @@ body{
 /* ------Nav-Bar-------- */
 nav{
     position: sticky;
-    background-color: #101215;
+    background-color: #feee00;
     color: #EFF2F3;
     width: 100%;
     padding: 0 200px;
@@ -39,10 +39,10 @@ nav{
     display: flex;
 }
 .nav-links ul li a{
-    color: white;
+    color: black;
 }
 .nav-links ul li a:hover{
-    color:#F8E394;
+    /* color:white; */
 }
 header{
     display: flex;
@@ -51,9 +51,13 @@ header{
     grid-column-end: 2;
     align-items: center;
 }
+header h2{
+    color: black;
+    font-weight: 400px;
+}
 header i{
     padding:10px;
-    color: #F8E394;
+    color: #f1c40f;
 }
 /* ---------cart-section----------- */
 .my-cart{
@@ -128,6 +132,7 @@ header i{
 /* ---cart-buttons--*/
 .cart-btn{
     margin-top: 20px;
+    margin-bottom: 10px;
     display: flex;
 }
 .wish-list-btn{
@@ -192,6 +197,9 @@ header i{
     flex-direction: column;
     /* align-items: center; */
     padding: 20px;
+    border: 1px ;
+    border-radius: 10px;
+    background-color: white;
 }
 .summary h2{
     margin-bottom: 20px;
@@ -210,10 +218,11 @@ header i{
     /* margin: 8px 0; */
     box-sizing: border-box;
     margin-bottom: 20px;
+    border-radius: 5px 0 0px 5px;
 }
 .total-price{
     display: grid;
-    grid-template-columns: 1fr .2fr;
+    grid-template-columns: 1fr .5fr;
 }
 .vat{
     margin-top: 30px;
@@ -223,6 +232,16 @@ header i{
 .price-div{
     grid-column-start: 2;
     margin-top: 30px;
+}
+.price-div span{
+    color: #121212;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.price-div label{
+    color: #121212;
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 .items-no{
     margin-bottom: 10px;
@@ -243,7 +262,7 @@ hr{
     background-color: #3498db;
     color: white;
     border: none;
-    border-radius: 3px;
+    border-radius:0 3px 3px 0;
 }
 .check-out-btn{
     padding: 10px 0 10px 0;
